@@ -1,0 +1,3 @@
+/home/rodion/CLionProjects/osi2/cmake-build-debug/CMakeFiles/osi2.dir
+/home/rodion/CLionProjects/osi2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/rodion/CLionProjects/osi2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
