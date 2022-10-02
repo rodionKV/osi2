@@ -4,6 +4,7 @@
 #include <signal.h>
 
 #define num_steps 200000000
+#define num_steps_pause 1000000
 
 #define num_thread 5
 
@@ -26,16 +27,16 @@ static void sig_int(int signo) {
 void *writer(void *agr) {
     struct result *result = static_cast<struct result *>(malloc(sizeof(struct result)));
     //double pi_part = 0;
-     long long i;
+    long long i;
     struct info structinfo = *static_cast<struct info *>(agr);
 
     result->decimal = 0;
 
     for (i = structinfo.first;; i += structinfo.size_step) {
-        if (((i - structinfo.first) % 1000000) == 0) {
+        if (((i - structinfo.first) % num_steps_pause) == 0) {
             pthread_barrier_wait(&barrier1);
             if (stopcheck) {
-                 pthread_barrier_wait(&barrier2);
+                pthread_barrier_wait(&barrier2);
                 pthread_exit((void *) result);
             }
         }
@@ -82,6 +83,9 @@ int main(int argc, char **argv) {
 
     result *= 4.0;
     printf("pi done - %.15g \n", result);
+
+    pthread_barrier_destroy(&barrier1);
+    pthread_barrier_destroy(&barrier2);
 
     pthread_exit(nullptr);
 }

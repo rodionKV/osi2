@@ -1,9 +1,10 @@
 # ninja log v5
+1	56	1664202828029774652	CMakeFiles/osi2.dir/test.cpp.o	6aebceb799718b6
 3	577	1663948420358640479	CMakeFiles/osi2.dir/lab6.cpp.o	46e792594c52a09
 2	444	1663948420226640139	CMakeFiles/osi2.dir/main.cpp.o	2d22d3a5cbd4dac4
 2	452	1663948420234640160	CMakeFiles/osi2.dir/lab2.cpp.o	ab398da8c6f16f51
 1	322	1663406101355548620	CMakeFiles/osi2.dir/lab1.cpp.o	da1d496b815f734c
 2	561	1663948420342640438	CMakeFiles/osi2.dir/lab3.cpp.o	7ca7217f07a36fed
 3	412	1663948420194640057	CMakeFiles/osi2.dir/lab5.cpp.o	7874464654c90cbf
-3	537	1663948420318640376	CMakeFiles/osi2.dir/lab8.cpp.o	ac96e57be52a820e
+1	384	1664202828357781491	CMakeFiles/osi2.dir/lab8.cpp.o	ac96e57be52a820e
 2	491	1663948420274640263	CMakeFiles/osi2.dir/lab4.cpp.o	3162d42fbd8443e0

@@ -103,6 +103,18 @@ build CMakeFiles/osi2.dir/test.cpp.o: CXX_COMPILER__osi2_Debug /home/rodion/CLio
   OBJECT_DIR = CMakeFiles/osi2.dir
   OBJECT_FILE_DIR = CMakeFiles/osi2.dir
 
+build CMakeFiles/osi2.dir/lab9.cpp.o: CXX_COMPILER__osi2_Debug /home/rodion/CLionProjects/osi2/lab9.cpp || cmake_object_order_depends_target_osi2
+  DEP_FILE = CMakeFiles/osi2.dir/lab9.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/osi2.dir
+  OBJECT_FILE_DIR = CMakeFiles/osi2.dir
+
+build CMakeFiles/osi2.dir/lab11.cpp.o: CXX_COMPILER__osi2_Debug /home/rodion/CLionProjects/osi2/lab11.cpp || cmake_object_order_depends_target_osi2
+  DEP_FILE = CMakeFiles/osi2.dir/lab11.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/osi2.dir
+  OBJECT_FILE_DIR = CMakeFiles/osi2.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target osi2
@@ -111,7 +123,7 @@ build CMakeFiles/osi2.dir/test.cpp.o: CXX_COMPILER__osi2_Debug /home/rodion/CLio
 #############################################
 # Link the executable osi2
 
-build osi2: CXX_EXECUTABLE_LINKER__osi2_Debug CMakeFiles/osi2.dir/main.cpp.o CMakeFiles/osi2.dir/lab1.cpp.o CMakeFiles/osi2.dir/lab2.cpp.o CMakeFiles/osi2.dir/lab3.cpp.o CMakeFiles/osi2.dir/lab4.cpp.o CMakeFiles/osi2.dir/lab5.cpp.o CMakeFiles/osi2.dir/lab6.cpp.o CMakeFiles/osi2.dir/lab8.cpp.o CMakeFiles/osi2.dir/test.cpp.o
+build osi2: CXX_EXECUTABLE_LINKER__osi2_Debug CMakeFiles/osi2.dir/main.cpp.o CMakeFiles/osi2.dir/lab1.cpp.o CMakeFiles/osi2.dir/lab2.cpp.o CMakeFiles/osi2.dir/lab3.cpp.o CMakeFiles/osi2.dir/lab4.cpp.o CMakeFiles/osi2.dir/lab5.cpp.o CMakeFiles/osi2.dir/lab6.cpp.o CMakeFiles/osi2.dir/lab8.cpp.o CMakeFiles/osi2.dir/test.cpp.o CMakeFiles/osi2.dir/lab9.cpp.o CMakeFiles/osi2.dir/lab11.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/osi2.dir
   POST_BUILD = :

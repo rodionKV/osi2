@@ -4,7 +4,7 @@
 
 #define num_steps 200000000
 
-#define num_thread 5
+#define num_thread 8
 
 struct info {
     int first;
@@ -16,13 +16,12 @@ struct result {
 
 void *writer(void *agr) {
     struct result *result = static_cast<struct result *>(malloc(sizeof(struct result)));
-    //double pi_part = 0;
-    int i;
+
     struct info structinfo = *static_cast<struct info *>(agr);
 
     result->decimal = 0;
-    // std::cout<<structinfo.first<<" "<<structinfo.size_step<<std::endl;
-    for (i = structinfo.first; i < num_steps; i += structinfo.size_step) {
+
+    for (int i = structinfo.first; i < num_steps; i += structinfo.size_step) {
 
         result->decimal += 1.0 / (i * 4.0 + 1.0);
         result->decimal -= 1.0 / (i * 4.0 + 3.0);
