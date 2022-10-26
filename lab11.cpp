@@ -6,7 +6,7 @@ pthread_mutex_t arr_mutex[3];
 
 void* writer(void *arg) {
     pthread_mutex_lock(&arr_mutex[1]);
-    for (int i = 0; i < 21; ++i) {
+    for (int i = 1; i < 11; ++i) {
         pthread_mutex_lock(&arr_mutex[0]);
         std::cout << "hello from second thread " << i << " times" << std::endl;
         pthread_mutex_unlock(&arr_mutex[1]);
@@ -34,14 +34,15 @@ int main() {
             perror("error create mutex");
         }
     }
+    pthread_mutex_lock(&arr_mutex[0]);
 
     err = pthread_create(&ntid, nullptr, writer, nullptr);
 
     if (err != 0) {
         perror("error create thread");
     }
-    pthread_mutex_lock(&arr_mutex[0]);
-    for (int i = 0; i < 21; ++i) {
+
+    for (int i = 1; i < 11; ++i) {
         std::cout << "hello from main thread " << i << " times" << std::endl;
         pthread_mutex_lock(&arr_mutex[2]);
         pthread_mutex_unlock(&arr_mutex[0]);

@@ -1,4 +1,1 @@
-/snap/clion/206/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/206/bin/ninja/linux/ninja -DCMAKE_C_COMPILER=/bin/gcc -DCMAKE_CXX_COMPILER=/bin/g++ -G Ninja -S /home/rodion/CLionProjects/osi2 -B /home/rodion/CLionProjects/osi2/cmake-build-debug
--- Configuring done
--- Generating done
--- Build files have been written to: /home/rodion/CLionProjects/osi2/cmake-build-debug
+CMakeLists.txt not found in /home/rodion/CLionProjects/osi2 Select CMakeLists.txt
